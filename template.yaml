@@ -34,4 +34,7 @@ Resources:
 Outputs:
   WebsiteURL:
     Description: 'S3 Website URL'
-    Value: !GetAtt WebsiteBucket.WebsiteURL 
+    Value: !GetAtt WebsiteBucket.WebsiteURL
+  BucketName:
+    Description: 'S3 Bucket Name'
+    Value: !Ref WebsiteBucket 
