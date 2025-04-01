@@ -1,56 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DayaBook Store</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>大雅書局 - 您的知識寶庫</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="/">
-                    <img src="placeholder-logo.png" alt="DayaBook Store" class="logo-img">
-                </a>
-            </div>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="大雅書局" />
+            <span class="company-name">大雅書局<span class="sub-name">(蘭語圖書社)</span></span>
+        </div>
+        
+        <div class="search-container">
+            <select class="category-select">
+                <option value="all">所有分類</option>
+                <option value="books">圖書</option>
+                <option value="stationery">文具</option>
+                <option value="gifts">禮品</option>
+                <option value="art">藝術用品</option>
+            </select>
+            <input type="text" placeholder="搜尋商品..." />
+            <button class="search-button">搜尋</button>
+        </div>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <div class="search-wrapper">
-                    <select class="category-dropdown">
-                        <option value="all">All Categories</option>
-                        <option value="books">Books</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="clothing">Clothing</option>
-                        <!-- Add more categories as needed -->
-                    </select>
-                    <input type="text" placeholder="Search products..." class="search-input">
-                    <button class="search-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Account & Cart -->
-            <div class="account-container">
-                <div class="account-section">
-                    <a href="/account" class="account-link">
-                        <span class="account-text">Hello, Sign in</span>
-                        <span class="account-subtext">Account & Lists</span>
-                    </a>
-                </div>
-                <div class="cart-section">
-                    <a href="/cart" class="cart-link">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                        <span class="cart-text">Cart</span>
-                    </a>
-                </div>
-            </div>
+        <div class="user-actions">
+            <a href="#account">我的帳戶</a>
+            <a href="#cart">購物車</a>
         </div>
     </header>
 
@@ -117,6 +98,23 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>關於我們</h3>
+                <p>大雅書局致力於為讀者提供優質的閱讀體驗</p>
+            </div>
+            <div class="footer-section">
+                <h3>客戶服務</h3>
+                <ul>
+                    <li><a href="#contact">聯絡我們</a></li>
+                    <li><a href="#shipping">配送說明</a></li>
+                    <li><a href="#returns">退換貨政策</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
