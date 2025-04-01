@@ -3,31 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-commerce Store</title>
+    <title>DayaBook Store</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/">
+                    <img src="placeholder-logo.png" alt="DayaBook Store" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <select class="category-dropdown">
+                        <option value="all">All Categories</option>
+                        <option value="books">Books</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Account & Cart -->
+            <div class="account-container">
+                <div class="account-section">
+                    <a href="/account" class="account-link">
+                        <span class="account-text">Hello, Sign in</span>
+                        <span class="account-subtext">Account & Lists</span>
+                    </a>
+                </div>
+                <div class="cart-section">
+                    <a href="/cart" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                        <span class="cart-text">Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>歡迎來到大雅的網站</h1>
-        <div class="featured-products">
-            <!-- Products will go here -->
-        </div>
-    </main>
+        <!-- Shopping sections -->
+        <section class="shopping-sections">
+            <div class="section-container">
+                <!-- Keep Shopping For -->
+                <div class="shopping-section">
+                    <h2>Keep Shopping For</h2>
+                    <div class="product-grid">
+                        <!-- Placeholder products -->
+                        <div class="product-card">
+                            <img src="placeholder-product.jpg" alt="Product">
+                            <h3>Product Name</h3>
+                            <p class="price">$99.99</p>
+                        </div>
+                        <!-- Add more product cards -->
+                    </div>
+                </div>
 
-    <footer>
-        <p>&copy; 2024 Your E-commerce Store</p>
-    </footer>
+                <!-- Buy Again -->
+                <div class="shopping-section">
+                    <h2>Buy Again</h2>
+                    <div class="product-grid">
+                        <!-- Placeholder products -->
+                        <div class="product-card">
+                            <img src="placeholder-product.jpg" alt="Product">
+                            <h3>Product Name</h3>
+                            <p class="price">$99.99</p>
+                        </div>
+                        <!-- Add more product cards -->
+                    </div>
+                </div>
+
+                <!-- Deals -->
+                <div class="shopping-section">
+                    <h2>Today's Deals</h2>
+                    <div class="product-grid">
+                        <!-- Placeholder products -->
+                        <div class="product-card">
+                            <img src="placeholder-product.jpg" alt="Product">
+                            <h3>Product Name</h3>
+                            <p class="price"><span class="original-price">$129.99</span> $89.99</p>
+                        </div>
+                        <!-- Add more product cards -->
+                    </div>
+                </div>
+
+                <!-- Limited Time Offers -->
+                <div class="shopping-section">
+                    <h2>Limited Time Offers</h2>
+                    <div class="product-grid">
+                        <!-- Placeholder products -->
+                        <div class="product-card">
+                            <img src="placeholder-product.jpg" alt="Product">
+                            <h3>Product Name</h3>
+                            <p class="price">$99.99</p>
+                            <p class="timer">Ends in: 2h 30m</p>
+                        </div>
+                        <!-- Add more product cards -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
